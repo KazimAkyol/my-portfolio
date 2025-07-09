@@ -33,7 +33,7 @@ const Home = () => {
                 {/* Sosyal Medya */}
                 <div className="flex space-x-4">
                     <NavLink
-                        to="https://linkedin.com/in/yourprofile"
+                        to="https://www.linkedin.com/in/kazim-akyol/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 dark:hover:text-blue-300 text-2xl"
@@ -41,7 +41,7 @@ const Home = () => {
                         <FontAwesomeIcon icon={faLinkedin} />
                     </NavLink>
                     <NavLink
-                        to="https://github.com/yourusername"
+                        to="https://github.com/KazimAkyol"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-800 hover:text-black dark:text-gray-300 dark:hover:text-white text-2xl"
