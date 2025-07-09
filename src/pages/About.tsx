@@ -5,7 +5,7 @@ const About = () => {
         <section className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-16">
             <div className="max-w-3xl w-full bg-white shadow-xl rounded-2xl p-10 space-y-6">
                 <h1 className="text-3xl font-bold text-gray-800 text-center">
-                    Hakkımda
+                    About me / Über mich
                 </h1>
 
                 <div className="space-y-4 text-gray-700 text-base leading-relaxed">
