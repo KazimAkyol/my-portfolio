@@ -1,38 +1,22 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+import en from './translations/en.json';
+import tr from './translations/tr.json';
+import de from './translations/de.json';
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    fallbackLng: 'en',
     resources: {
-      en: {
-        translation: {
-          about: {
-            title: "About Me",
-            text: "I'm a passionate full-stack developer...",
-          },
-        },
-      },
-      de: {
-        translation: {
-          about: {
-            title: "Über mich",
-            text: "Ich bin ein leidenschaftlicher Full-Stack-Entwickler...",
-          },
-        },
-      },
-      tr: {
-        translation: {
-          about: {
-            title: "Hakkımda",
-            text: "Ben tutkulu bir full-stack geliştiricisiyim...",
-          },
-        },
-      },
+      en: { translation: en },
+      tr: { translation: tr },
+      de: { translation: de },
     },
+    interpolation: { escapeValue: false },
   });
 
 export default i18n;
