@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 
-const Home: React.FC = () => {
+const Home = () => {
     return (
         <section className="home" id="home">
             <div className="home-content">
@@ -22,23 +23,23 @@ const Home: React.FC = () => {
 
 
                 <div className="social-media">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <NavLink to="#" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    </NavLink>
+                    <NavLink to="#" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    </NavLink>
+                    <NavLink to="#" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    </NavLink>
+                    <NavLink to="#" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-whatsapp"></i>
-                    </a>
+                    </NavLink>
                 </div>
 
-                <a href="#" className="btn">
+                <NavLink href="#" className="btn">
                     Download CV
-                </a>
+                </NavLink>
             </div>
 
             <div className="home-img">
