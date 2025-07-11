@@ -1,16 +1,28 @@
-import LanguageSwitcher from './components/LanguageSwitcher'
-import ThemeToggle from './components/ThemeToggle'
-import About from './pages/About'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
     return (
-        <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-            <About />
-            <Home />
-            <ThemeToggle />
-            <LanguageSwitcher />
-        </main>
+        <Router>
+            <div className="min-h-screen flex flex-col">
+                <Header />
+                <main className="flex-grow w-full">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     )
 }
 

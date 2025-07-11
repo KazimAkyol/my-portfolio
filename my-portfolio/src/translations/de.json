@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Willkommen in meinem Portfolio",
+    "subtitle": "Ich bin ein leidenschaftlicher Entwickler"
+  },
+
+  "about": {
+    "title": "Über Mich",
+    "content": "Ich bin ein engagierter Full-Stack-Entwickler mit einer Leidenschaft für die Entwicklung innovativer, skalierbarer und nutzerzentrierter Webanwendungen. Mit einem umfassenden Können in HTML, CSS, JavaScript, React, React-Redux, Node.js, MongoDB, Next.js und Toast-Notify bin ich in der Lage, nahtlose, leistungsstarke Lösungen zu entwickeln, die Front- und Back-End-Entwicklung vereinen. Meine Erfahrung umfasst die Gestaltung responsiver und intuitiver Benutzeroberflächen, die Implementierung effizienten Zustandsmanagements mit React-Redux sowie die Entwicklung robuster serverseitiger Anwendungen mit Node.js und MongoDB. Ich nutze Next.js, um optimierte, serverseitig gerenderte Anwendungen zu erstellen, die Leistung und SEO verbessern. Neben meiner technischen Expertise bin ich versiert in agilen Projektmanagement-Methoden und nutze Tools wie Jira und Kanban, um Arbeitsabläufe zu optimieren, effektiv mit interdisziplinären Teams zusammenzuarbeiten und Projekte termingerecht abzuschließen. Mein Ansatz legt Wert auf sauberen, wartbaren Code, die Einhaltung bewährter Praktiken und ein Engagement für kontinuierliches Lernen, um stets auf dem neuesten Stand der modernen Webentwicklung zu bleiben. Ob bei der Lösung komplexer technischer Herausforderungen oder der Schaffung ansprechender Nutzererlebnisse, mein Ziel ist es, Lösungen zu liefern, die mit den Geschäftszielen übereinstimmen und die Erwartungen der Nutzer übertreffen."
+  },
+
+  "projects": {
+    "title": "Meine Projekte",
+    "viewProject": "Projekt ansehen",
+    "project1": {
+      "title": "Portfolio Website",
+      "description": "Ein modernes Portfolio erstellt mit React und Tailwind CSS."
+    },
+    "project2": {
+      "title": "E-Commerce API",
+      "description": "Backend-Service für einen Online-Shop."
+    }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "nameLabel": "Ihr Name",
+    "emailLabel": "E-Mail-Adresse",
+    "messageLabel": "Ihre Nachricht",
+    "submitButton": "Nachricht senden",
+    "successMessage": "Vielen Dank! Ihre Nachricht wurde versendet.",
+    "alternativeTitle": "Oder kontaktieren Sie mich direkt:"
+  },
+
+  "footer": {
+  "copyright": "Alle Rechte vorbehalten.",
+  "privacy": "Datenschutz",
+  "terms": "Nutzungsbedingungen",
+  "sitemap": "Seitenübersicht",
+  "backToTop": "Nach oben"
+}
+}

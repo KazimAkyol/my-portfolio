@@ -1,89 +1,51 @@
-import React from "react";
-import { NavLink } from 'react-router-dom';
-// Font Awesome ikonları için (isteğe bağlı)
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faFacebook, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
+import profileImage from '../assets/images/pp-ich.jpeg';
 
-const Home = () => {
+export default function Home() {
+    const { t } = useTranslation();
+
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/path/to/cv.pdf';
+        link.download = 'Kazim_Akyol_CV.pdf';
+        link.click();
+    };
+
     return (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center gap-8">
-            {/* Sol Taraf - İçerik */}
-            <div className="md:w-1/2 space-y-6">
-                <h3 className="text-lg text-gray-600 dark:text-gray-300">Hello I'm</h3>
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-                    Kazim Akyol
-                </h1>
-                <h3 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400">
-                    And I'm a Fullstack Developer
-                </h3>
+        <section className="min-h-screen flex items-center bg-gray-900 text-white py-12">
+            <div className="container mx-auto px-6">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+                    {/* Sol kısım: Metinler */}
+                    <div className="flex-1">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-2">
+                            Hi, I'M <span className="text-yellow-400">Kazim Akyol</span>
+                        </h1>
+                        <h2 className="text-2xl md:text-3xl font-semibold text-green-400 mb-6">PROGRAMMER</h2>
 
-                <p className="text-gray-700 dark:text-gray-300">
-                    As an energetic and innovative Software developer, meet my passion for
-                    pushing the boundaries of technology and writing better code every
-                    day. Specialized as a Full Stack developer with a focus on React, my
-                    goal is not only software but also enhancing user experiences,
-                    building sustainable solutions, and staying one step ahead with each
-                    project.
-                </p>
+                        <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
+                            {t('home.subtitle', {
+                                defaultValue:
+                                    "I am a full-stack web developer with expertise in HTML, CSS, JavaScript, React, TypeScript, Node.js and MongoDB. I have projects on creating both front-end and back-end dynamic and responsive user interfaces, as well as databases using SQL and NoSQL. I am good at implementing intuitive user logic based on end-to-end solutions. I maintain a holistic approach to web development, staying up to date on emerging technologies and adapting to project requirements.",
+                            })}
+                        </p>
 
-                <p className="text-gray-700 dark:text-gray-300">
-                    I transitioned from teaching mathematics to full-stack development. I build dynamic interfaces with React, Redux, and TypeScript, and develop scalable APIs using Node.js and Express. I'm experienced with MongoDB and PostgreSQL. I'm a strong team player, a fast learner, and I love creating useful products.
-                </p>
+                        <button
+                            onClick={downloadCV}
+                            className="bg-green-400 hover:bg-green-500 text-gray-900 font-medium py-2 px-6 rounded-md text-sm md:text-base transition duration-200">
+                            {t('home.downloadCV', { defaultValue: 'DOWNLOAD CV' })}
+                        </button>
+                    </div>
 
-                {/* Sosyal Medya */}
-                <div className="flex space-x-4">
-                    <NavLink
-                        to="https://www.linkedin.com/in/kazim-akyol/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 dark:hover:text-blue-300 text-2xl"
-                    >
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </NavLink>
-                    <NavLink
-                        to="https://github.com/KazimAkyol"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-800 hover:text-black dark:text-gray-300 dark:hover:text-white text-2xl"
-                    >
-                        <FontAwesomeIcon icon={faGithub} />
-                    </NavLink>
-                    <NavLink
-                        to="https://facebook.com/yourprofile"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 dark:hover:text-blue-300 text-2xl"
-                    >
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </NavLink>
-                    <NavLink
-                        to="https://wa.me/yournumber"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-green-600 hover:text-green-800 dark:hover:text-green-300 text-2xl"
-                    >
-                        <FontAwesomeIcon icon={faWhatsapp} />
-                    </NavLink>
+                    {/* Sağ kısım: Profil Fotoğrafı */}
+                    <div className="flex-shrink-0">
+                        <img
+                            src={profileImage}
+                            alt="Kazim Akyol"
+                            className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-gray-300 shadow-xl"
+                        />
+                    </div>
                 </div>
-
-                <NavLink
-                    to="/path-to-cv"
-                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300"
-                >
-                    Download CV
-                </NavLink>
-            </div>
-
-            {/* Sağ Taraf - Avatar */}
-            <div className="md:w-1/2 flex justify-center">
-                <img
-                    src="/images/gözlüklü-avatar.jpg"
-                    alt="Kazim Akyol Avatar"
-                    className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl border-4 border-white dark:border-gray-800"
-                />
             </div>
         </section>
     );
-};
-
-export default Home;
+}

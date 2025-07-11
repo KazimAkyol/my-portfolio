@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": ""
+  },
+
+  "about": {
+    "title": "About Me",
+    "content": "I am a dedicated Full-Stack Developer with a strong passion for crafting innovative, scalable, and user-centric web applications. With a robust skill set spanning HTML, CSS, JavaScript, React, React-Redux, Node.js, MongoDB, Next.js, and Toast-Notify, I excel at building seamless, high-performance solutions that bridge front-end and back-end development. My experience includes designing responsive and intuitive user interfaces, implementing efficient state management with React-Redux, and developing robust server-side applications using Node.js and MongoDB. I leverage Next.js to create optimized, server-rendered applications that enhance performance and SEO. Beyond technical expertise, I am proficient in agile project management methodologies, utilizing tools like Jira and Kanban to streamline workflows, collaborate effectively with cross-functional teams, and deliver projects on time. My approach emphasizes clean, maintainable code, adherence to best practices, and a commitment to continuous learning to stay at the forefront of modern web development trends. Whether solving complex technical challenges or creating delightful user experiences, I strive to deliver solutions that align with business objectives and exceed user expectations."
+  },
+
+  "projects": {
+    "title": "My Projects",
+    "viewProject": "View Project",
+    "project1": {
+      "title": "Portfolio Website",
+      "description": "A modern portfolio built with React and Tailwind CSS."
+    },
+    "project2": {
+      "title": "E-commerce API",
+      "description": "Backend service for an online store."
+    }
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "nameLabel": "Your Name",
+    "emailLabel": "Email Address",
+    "messageLabel": "Your Message",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! Your message has been sent.",
+    "alternativeTitle": "Or reach me directly:"
+  },
+
+  "footer": {
+  "copyright": "All rights reserved.",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "sitemap": "Sitemap",
+  "backToTop": "Back to Top"
+}
+}
