@@ -18,9 +18,9 @@ export default function Home() {
                     {/* Sol kısım: Metinler */}
                     <div className="flex-1">
                         <h1 className="text-4xl md:text-5xl font-bold mb-2">
-                            Hi, I'M <span className="text-yellow-400">Kazim Akyol</span>
+                            Hi, I'm <span className="text-yellow-400">Kazim Akyol</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-semibold text-green-400 mb-6">PROGRAMMER</h2>
+                        <h2 className="text-2xl md:text-3xl font-semibold text-green-400 mb-6">Programmer</h2>
 
                         <p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
                             {t('home.subtitle', {
@@ -37,7 +37,7 @@ export default function Home() {
                     </div>
 
                     {/* Sağ kısım: Profil Fotoğrafı */}
-                    <div className="flex-shrink-0">
+                    <div>
                         <img
                             src={profileImage}
                             alt="Kazim Akyol"
