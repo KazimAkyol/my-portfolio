@@ -29,9 +29,9 @@ export default function Home() {
                             })}
                         </p>
                     </div>
-                    <a href="/data/Muhammet_SOLMAZ.pdf" download="MUhammet_SOLMAZCV.pdf">
+                    <a href="/data/Mein-Lebenslauf.pdf" download="Mein-Lebenslauf.pdf">
                         <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-                            <p>Dowland CV</p>
+                            <p>Dowload CV</p>
                             <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
                         </button>
                     </a>
