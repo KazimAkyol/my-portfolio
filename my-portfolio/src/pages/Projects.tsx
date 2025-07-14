@@ -29,11 +29,11 @@ export default function Projects() {
             link: 'https://movie-app-lilac-mu.vercel.app/'
         },
         {
-            id: 2,
-            title: t('Movie App'),
+            id: 3,
+            title: t('Shopping Card'),
             description: t('projects.project2.description'),
             technologies: ['React', 'Firebase', 'Axios'],
-            link: 'https://movie-app-lilac-mu.vercel.app/'
+            link: 'https://shopping-card-project-mocha.vercel.app/'
         },
         {
             id: 2,
