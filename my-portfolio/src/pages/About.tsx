@@ -6,7 +6,7 @@ export default function About() {
 
     return (
         <div
-            className="min-h-screen  bg-cover bg-center bg-no-repeat bg-fixed opacity-75"
+            className="relative min-h-screen  bg-cover bg-center bg-no-repeat bg-fixed opacity-75"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="backdrop-blur-sm bg-black/30 min-h-screen">
@@ -22,17 +22,3 @@ export default function About() {
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
