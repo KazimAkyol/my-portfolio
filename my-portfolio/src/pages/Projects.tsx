@@ -34,13 +34,6 @@ export default function Projects() {
             technologies: ['React', 'Firebase', 'Axios'],
             link: 'https://shopping-card-project-mocha.vercel.app/'
         },
-        {
-            id: 2,
-            title: t('Movie App'),
-            description: t('projects.project2.description'),
-            technologies: ['React', 'Firebase', 'Axios'],
-            link: 'https://movie-app-lilac-mu.vercel.app/'
-        },
     ];
 
     return (
@@ -48,7 +41,7 @@ export default function Projects() {
             <h1 className="text-4xl font-bold mb-8 text-center">{t('projects.title')}</h1>
 
             <div
-                className="min-h-screen  bg-cover bg-center bg-no-repeat bg-fixed opacity-75"
+                className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed opacity-75"
                 style={{ backgroundImage: `url(${backgroundImage})` }}
             >
             </div>
