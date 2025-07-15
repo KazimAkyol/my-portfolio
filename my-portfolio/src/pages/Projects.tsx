@@ -12,7 +12,6 @@ type Project = {
 export default function Projects() {
     const { t } = useTranslation();
 
-    // Örnek proje verileri
     const projects: Project[] = [
         {
             id: 1,
@@ -42,7 +41,6 @@ export default function Projects() {
             technologies: ['React', 'Firebase', 'Axios'],
             link: 'https://movie-app-lilac-mu.vercel.app/'
         },
-
     ];
 
     return (

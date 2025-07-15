@@ -13,7 +13,6 @@ export default function Contact() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Form gönderme işlemi burada yapılabilir
         alert(t('contact.successMessage'));
         setFormData({ name: '', email: '', message: '' });
         toast.success(t('contact.successMessage'), {

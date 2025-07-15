@@ -9,13 +9,6 @@ export default function Header() {
         <header className="bg-gray-800 text-white p-4 w-full">
             <div className="container mx-auto flex items-center">
 
-                {/* <div
-                    className="min-h-screen  bg-cover bg-center bg-no-repeat bg-fixed opacity-75"
-                    style={{ backgroundImage: `url(${backgroundImage})` }}
-                >
-                </div> */}
-
-                {/* 2. Tam Ortada Eşit Aralıklı Linkler */}
                 <nav className="flex justify-center w-4/4">
                     <ul className="flex justify-between w-full max-w-md">
                         <li>
@@ -45,7 +38,6 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                {/* 3. Sağ Tarafta Dil Seçici */}
                 <div className="flex justify-end w-1/4">
                     <LanguageSwitcher />
                 </div>
